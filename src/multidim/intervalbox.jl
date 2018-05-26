@@ -44,7 +44,6 @@ diam(X::IntervalBox) = maximum(diam.(X))
 emptyinterval(X::IntervalBox{N,T}) where {N,T} = IntervalBox(emptyinterval.(X))
 
 
-import Base.×
 ×(a::Interval...) = IntervalBox(a...)
 ×(a::Interval, b::IntervalBox) = IntervalBox(a, b...)
 ×(a::IntervalBox, b::Interval) = IntervalBox(a..., b)

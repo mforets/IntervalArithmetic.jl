@@ -12,4 +12,4 @@ include("parsing.jl")
 include("rounding_macros.jl")
 include("rounding.jl")
 
-# include("complex.jl")
+include("complex.jl")
